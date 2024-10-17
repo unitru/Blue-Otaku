@@ -38,9 +38,9 @@ const translateButton = document.getElementById('translate');
 translateButton.addEventListener('click', () => {
     const elements = [
         { selector: 'a[href="index.html"]', original: 'Home', translated: 'Inicio' },
-        { selector: 'a[href="Anime/Anime.html"]', original: 'Anime', translated: 'Anime' },
+        { selector: 'a[href="Anime.html"]', original: 'Anime', translated: 'Anime' },
         { selector: 'a[onclick="irA(\'noticia\')"]', original: 'News', translated: 'Noticias' },
-        { selector: 'a[href="#"]', original: 'Community', translated: 'Comunidad' },
+        { selector: 'a[href="Comunidad.html"]', original: 'Community', translated: 'Comunidad' },
         { selector: '#theme-toggle', original: 'Dark Mode', translated: 'Modo Oscuro' },
         { selector: '#theme-toggle', original: 'Light Mode', translated: 'Modo Claro' },
         { selector: '#translate', original: 'Translate', translated: 'Traducir' },
