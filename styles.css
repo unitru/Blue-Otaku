@@ -135,7 +135,8 @@ img:hover {
 .slider {
     position: relative;
     overflow: hidden;
-    height: 800px ; 
+    height: 800px;
+margin-top: 200px;
 }
 
 .slider-wrapper {
