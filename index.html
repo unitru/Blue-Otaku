@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Otaku</title>
+    <link rel="icon" href="icono.png" width="30px">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header with navigation -->
+
+    <div id="registro" class="seccion">
+        <h1>Inicia Sesión</h1>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" placeholder="  Tu nombre...">
+            
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" placeholder="  Tu correo...">
+            
+            <label for="contraseña">Contraseña:</label>
+            <input type="password" id="contraseña" placeholder="  Tu contraseña...">
+            
+            <button id="botonregistro" type="submit" onclick="mostrarPaginaPrincipal()"><b>Registrarse</b></button>
+        </form>
+    </div>
+
+    <!-- Página Principal -->
+    <div id="pagina-principal" class="oculto"> 
+        <header>
+            <div class="logo">
+                <h1>Blue Otaku</h1>
+            </div>
+            <nav>
+                <ul>
+                  <li><a href="index2.html"><i class="fas fa-home"></i> Home</a></li>
+                  <li><a href="Anime.html"><i class="fas fa-film"></i> Anime</a></li>
+                  <li><a onclick="irA('noticia')"><i class="fas fa-newspaper"></i> News</a></li>
+                  <li><a href="Comunidad.html"><i class="fas fa-users"></i> Community</a></li>
+                  <li><button id="theme-toggle"><i class="fas fa-moon"></i> Dark Mode</button></li>
+                  <li><button id="translate"><i class="fas fa-globe"></i> Translate</button></li>
+                </ul>
+              </nav>
+        </header>
+    
+        <section class="slider">
+            <div class="slider-wrapper">
+                <div class="slide" style="background-image: url('https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/9ca680632ac63f44c7220f61ace9a81b.jpg');">
+                </div>
+                <div class="slide" style="background-image: url('https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/bc5934e65dcfc3e6f1f783160ce023fb.jpg');">
+                </div>
+                <div class="slide" style="background-image: url('https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/59ae7b430945bbdf9638b2e017897fb2.jpg');">
+                </div>
+                <div class="slide" style="background-image: url('https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/8321a5945ab77607f014d5d7a77065e6.jpg');">
+                </div>
+                <div class="slide" style="background-image: url('https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/a249096c7812deb8c3c2c907173f3774.jpg');">
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="prev">❮</button>
+                <button class="next">❯</button>
+            </div>
+        </section>
+    
+        <!-- Content Sections -->
+        <main>
+            <section class="featured-anime"><br></br>
+                <h2 id="t1">Featured Anime</h2>
+                <div class="anime-grid">
+                    <div class="anime-card">
+                        <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/fa62dd1fc7a9bc0b587f36f53bf572c1.jpg" alt="Anime 1">
+                        <div class="informacion-noticia">
+                            <div class="reseña">
+                                DANDAN
+                                <p id="t14">Follow Takakura and Ayase, on a quest to uncover the truth of mysterious paranormal phenomena. As they face ghosts and aliens, they deal with their own contrasting beliefs and personalities.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="anime-card">
+                        <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/5525651c53b49243de6835134651192c.jpg" alt="Anime 2">
+                        <div class="informacion-noticia">
+                            <div class="reseña">
+                                RE:ZERO
+                                <p id="t15">Subaru Natsuki, a young man who is transported to a fantasy world. Despite having no special abilities, he discovers that he possesses the power to go back in time whenever he dies, allowing him to change the course of events.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="anime-card">
+                        <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/34cf65c200da726462d0c0ac7e0e55af.jpg" alt="Anime 3">
+                        <div class="informacion-noticia">
+                            <div class="reseña">
+                                SHANGRI-LA FRONTIER
+                                <p id="t16">Rakurou Hizutome, a passionate gamer, decides to try the acclaimed VRMMO "Shangri-La Frontier." exploring a vast virtual world full of unique challenges and adventures.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="latest-news" id="noticia">
+                <h2 id ="t2"> Latest News</h2>
+                <p id ="t3">Goku story is not over yet! Theres a whole new saga waiting to unfold in Dragon Ball DAIMA, premiering TOMORROW! In addition to releasing his new video game Sparking Zero!!. This anime is considered a last gift from Akira Toriyama, the creator of the franchise, who worked on the project before his death. Although his legacy is now indelible, there is a detail in this new anime that has convinced fans that his spirit is still alive in the series.</p>
+                <br></br><article class="news-item"><div class="image-container-2">
+                    <img src="https://a.storyblok.com/f/178900/1200x675/440f985424/dragon-ball-daima.png/m/1200x0/filters:quality(95)format(webp)" alt="News 1" width="550px">
+                    <img src="https://surtido.pe/wp-content/uploads/2024/10/DRAGON-BALL_-Sparking-4.jpg" alt="News 1" width="550px">
+                </div><br></br>
+                <p id ="t17">One Piece anime on hiatus until April 2025, the news has paralyzed fans of the anime, as this will be the longest hiatus since the beginning of its broadcast in 1999. The adaptation, which is currently adapting the Egghead arc, will go on hiatus after episode 1,122 for, according to the words of the presenters, "recharge the batteries", and when it returns in 2025 it will do so in a new schedule on Japanese television.</p>
+                <br></br><article class="news-item"><div class="image-container-2">
+                    <img src="https://ramenparados.com/wp-content/uploads/2024/10/GZxVTTHWQAEokLm-1024x576.jpg" alt="News 1" width="550px">
+                    <img src="https://imgmedia.larepublica.pe/640x371/larepublica/original/2022/04/17/625c69e31ec5d2282869ea18.webp" alt="News 1" width="540px"> 
+                </div><div class="news-text">
+                        <br></br>
+                        <h2 id="t4">New Anime Seasons</h2>
+                        <p id ="t5">Get the latest news about upcoming anime seasons!</p>
+                    </div>
+                </article>
+                <article class="news-item"><div class="image-container">
+                    <img src="https://scontent.ftru2-2.fna.fbcdn.net/v/t39.30808-6/462784127_1062817431889611_4159981603995820377_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFeKrpz0GW4NSUvCT3PFxOAss-GSmyWSKyyz4ZKbJZIrCQGH46syKUWT-fEz6ofiqD-sZIaQV58YX5a0DNuMeM5&_nc_ohc=UzqUh6hrIYQQ7kNvgEIOBFI&_nc_ht=scontent.ftru2-2.fna&_nc_gid=A48mCzofj-SJ8PeuTXrq_eN&oh=00_AYAi3bHdvgXgNvKEN7p2QZ3j0_UK_7nKXxA65hGyHLb5QA&oe=6714FE9F" alt="News 2" width="270px" height="372px">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj9WEdPUufchoSTToGli0_RRC26GCOotc-ZpslPTRVWsx3sTXp5e7YWhi2ZQ5_9Lqps_Vd8bX-Vk2W70Rmrk0FDaypLTPa65iV51qcTcCM8rr-tRQViXNyA2KeLopdEh0MKtm4Cejum9ZiC87XdfnjuFUvmRzdpeWJMQSJSaxrLE_3FDW4zFkTn_j06Za0B/s1200/Mushoku-Tensei.webp" alt="News 2" width="270px" height="372px">
+                    <img src="https://www.masgamers.com/wp-content/uploads/2022/06/vinland-saga-temporada-2.jpg"alt="News 2" width="270px" height="372px">
+                    <img src="https://external-preview.redd.it/jujutsu-kaisen-season-2-new-key-visual-v0--3LFznstxvj27z8nTx2VtqYodzMTUiMlm0R-OUUyOJs.jpg?auto=webp&s=4e49c1804fcdd13b553506e546e4de26a29e12fa"alt="News 2" width="270px" height="372px">
+                    <img src="https://i0.wp.com/multianime.com.mx/wp-content/uploads/2024/09/Temporada-2-de-Solo-Leveling-Arise-from-the-Shadow-El-anime-revela-un-nuevo-visual-estreno-en-enero-de-2025.jpg?w=778&ssl=1" alt="News 2" width="270px" height="372px">
+                    </div><br></br><div class="image-container">
+                    <img src="https://media.tycsports.com/files/2024/07/04/737791/kimetsu-no-yaiba_w862.webp" alt="News 2" width="270px" height="372px">
+                    <img src="https://hips.hearstapps.com/hmg-prod/images/one-punch-man-temporada-3-65f61fc3a82e1.jpg?resize=640:*" alt="News 2" width="270px" height="372px">
+                    <img src="https://a.storyblok.com/f/178900/1064x1499/43269d83ec/dragon-ball-daima-key-visual.png/m/filters:quality(95)format(webp)" alt="News 2" width="270px" height="372px">
+                    <img src="https://somoskudasai.com/wp-content/uploads/2024/08/DND_kv2-1.jpg" alt="News 2" width="270px" height="372px">
+                    <img src="https://somoskudasai.com/wp-content/uploads/2024/07/BLEACHKV7.jpg" alt="News 2" width="270px" height="372px">
+                </div>
+                    <div class="news-text">
+                        <br></br>
+                        <h2 id ="t6">Anime Events</h2>
+                        <p id ="t7">Every summer, anime fans from around the world flock to Los Angeles for the ultimate celebration of Japanese pop culture: Anime Expo.Held at the Los Angeles Convention Center, this years Anime Expo, which ran from July 4th to July 7th, was a whirlwind of excitement, creativity, and community.</p>
+                        <br></br><div class="image-container-2"><img src="https://www.laughingplace.com/w/wp-content/uploads/2024/07/anime-expo-2024-a-celebration-of-all-things-anime.jpeg/w1024"alt="News 2" width="500px">
+                        <img src="https://www.laughingplace.com/w/wp-content/uploads/2024/07/anime-expo-2024-a-celebration-of-all-things-anime-3.jpeg/w1024"alt="News 2" width="500px">
+                    </div></div>
+                </article>
+            </section>
+    
+            <section class="community-section"> 
+                <h2 id="t8">Community Forum</h2>
+                <div class="forum-preview">
+                    <p id="t9">Latest Topic:</p>
+                    <ul>
+                        <li id="t10">Best Anime of the Year?</li>
+                        <li id="t11">Who do you think is the best character of 2024?</li>
+                        <li id="t12">What upcoming anime release are you most excited about?</li>
+                    </ul>
+                    <p id="t13">Join the discussion in our community forums.</p>
+                    <button id="t18" class="custom-link">View More</button>
+                </div>
+            </section>            
+            <br></br>
+        </main>
+    
+        <footer>
+            <p>&copy; 2024 BlueOtaku. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

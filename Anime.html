@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Otaku</title>
+    <link rel="icon" href="icono.png" width="30px">
+    <link rel=" stylesheet" href="stylesanime.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="menu-container">
+            <h1>Blue Otaku</h1>
+              <nav>
+                  <ul>
+                    <li><a href="index2.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="Anime.html"><i class="fas fa-film"></i> Anime</a></li>
+                    <li><a href="index2.html#noticia"><i class="fas fa-newspaper"></i> News</a></li>
+                    <li><a href="Comunidad.html"><i class="fas fa-users"></i> Community</a></li>
+                    <li><button id="theme-toggle"><i class="fas fa-moon"></i> Dark Mode</button></li>
+                    <li><button id="translate"><i class="fas fa-globe"></i> Translate</button></li>
+                  </ul>
+                </nav>
+        </div>
+        <div class="header-content container">
+            <div class="header-txt">
+                <h1> MIRA TU <span> ANIME</span><br> FAVORITO AQUI</h1>
+                <p> Bienvenido a nuestra página dedicada a las últimas 
+                    series de anime en estreno. Únete a nosotros en este 
+                    viaje lleno de aventuras, fantasía y emociones que 
+                    solo el anime puede ofrecer. ¡Explora y déjate 
+                    llevar por la magia de cada nueva serie!
+                </p>
+                <div class="butons">
+                    <a href="index2.html" class="btn-1"><b>Regresar</b></a>
+                    <a onclick="irA('explorar')" class="btn-1"><b>Explorar</b></a>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <section>
+        <div class="search-filter" id="explorar">
+          <input type="text" id="search" placeholder="Buscar anime...">
+          <select id="genre-filter">
+            <option value="all">Todos los géneros</option>
+            <option value="accion">Acción</option>
+            <option value="aventura">Aventura</option>
+            <option value="fantasia">Fantasía</option>
+          </select>
+        </div>
+      </header>
+    
+      <section id="anime-catalog" class="catalog">
+        <!-- Tarjetas de anime con imágenes y títulos -->
+        <div class="anime-card" data-genre="accion">
+            <img src="https://i.pinimg.com/564x/bb/f1/83/bbf183ceb3ec82c8393f59505f23b3cf.jpg" alt="Anime 1">
+            <h3>SAO: Gun Gale Online</h3>
+        </div>
+        <div class="anime-card" data-genre="aventura">
+            <img src="https://i.pinimg.com/control/564x/f7/22/2d/f7222d050256d6e7f7f089b6b4181f73.jpg" alt="Anime 2">
+            <h3>Blue Lock</h3>
+        </div>
+        <div class="anime-card" data-genre="fantasia">
+            <img src="https://i.pinimg.com/736x/4b/f3/13/4bf31391f0e3625ab6354559837ceaa3.jpg" alt="Anime 3">
+            <h3>Dandadan</h3>
+        </div>
+        <div class="anime-card" data-genre="aventura">
+            <img src="https://i.pinimg.com/564x/4d/cb/51/4dcb514db836919f5cbcaa9dc21eeaf9.jpg" alt="Anime 4">
+            <h3>Dragon Ball Daima</h3>
+          </div>
+          <div class="anime-card" data-genre="fantasía">
+            <img src="https://i.pinimg.com/564x/08/3b/9b/083b9bf3638018dc64f372182f09d8ea.jpg" alt="Anime 5">
+            <h3>Danmachi</h3>
+          </div>
+          <div class="anime-card" data-genre="accion">
+            <img src="https://i.pinimg.com/736x/9f/3b/2a/9f3b2ad4da7ab7926c65487addc5b906.jpg" alt="Anime 6">
+            <h3>Kaiju No.8</h3>
+          </div>
+          <div class="anime-card" data-genre="fantasía">
+            <img src="https://i.pinimg.com/736x/a2/38/4f/a2384f728f0b51054c953b36aa698a99.jpg" alt="Anime 7">
+            <h3>Tragones y mazmorras</h3>
+          </div>
+          <div class="anime-card" data-genre="fantasía">
+            <img src="https://i.pinimg.com/control/564x/88/11/99/881199a45369a9cb1262e9cc1f5c7d29.jpg" alt="Anime 8">
+            <h3>Blue Exorcist</h3>
+          </div>
+          <div class="anime-card" data-genre="aventura">
+            <img src="https://i.pinimg.com/control/564x/e9/51/3d/e9513d8fce1ca4f5a51e6954dbbc7a99.jpg" alt="Anime 9">
+            <h3>My Hero Academy</h3>
+          </div>
+          <div class="anime-card" data-genre="accion">
+            <img src="https://i.pinimg.com/control/564x/9f/dc/be/9fdcbe10122eb360c1c73a57e69b2090.jpg" alt="Anime 10">
+            <h3>Solo Leveling</h3>
+          </div>
+          <div class="anime-card" data-genre="fantasia">
+            <img src="https://i.pinimg.com/control/564x/27/dd/a6/27dda6bb9b3f27ebf2ee9bd5dd9ac6cd.jpg" alt="Anime 11">
+            <h3>Black Clover</h3>
+          </div>
+          <div class="anime-card" data-genre="fantasia">
+            <img src="https://i.pinimg.com/control/564x/e1/df/c6/e1dfc6e8f0d8344e18adfa556d773ba8.jpg" alt="Anime 12">
+            <h3>Nanatzu no Taizai</h3>
+          </div>
+          <div class="anime-card" data-genre="accion">
+            <img src="https://i.pinimg.com/564x/24/3b/94/243b94410be0cbefaf0b46d5bc0410df.jpg" alt="Anime 13">
+            <h3>Akame ga Kill</h3>
+          </div>
+          <div class="anime-card" data-genre="acción">
+            <img src="https://i.pinimg.com/control/564x/7a/ff/f1/7afff1deae1a5ec0925e79190ba43a86.jpg" alt="Anime 14">
+            <h3>Shingeki no Kyojin</h3>
+          </div>
+          <div class="anime-card" data-genre="aventura">
+            <img src="https://i.pinimg.com/564x/83/15/4e/83154ee5a630e08ea354a6eac802691f.jpg" alt="Anime 15">
+            <h3>One Piece</h3>
+          </div>
+          <div class="anime-card" data-genre="fantasia">
+            <img src="https://i.pinimg.com/736x/21/5b/f8/215bf87476e3a4d0b12d9b313a70d250.jpg" alt="Anime 16">
+            <h3>Tower of God</h3>
+          </div>
+      </section>
+    </section>
+<script src="scriptsanime.js"></script>
+
+</body>
+</html>
